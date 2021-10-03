@@ -13,9 +13,9 @@ RUN rm -rf /usr/app/src/node_modules
 RUN rm /usr/app/src/.env
 
 #server1
-#RUN mv /usr/app/src/.env.server1 /usr/app/src/.env
+RUN mv /usr/app/src/.env.server1 /usr/app/src/.env
 #server2
-RUN mv /usr/app/src/.env.server2 /usr/app/src/.env
+#RUN mv /usr/app/src/.env.server2 /usr/app/src/.env
 
 
 # Install
