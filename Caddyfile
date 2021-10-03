@@ -1,0 +1,7 @@
+http://abc.com {
+	reverse_proxy server1:4000 server2:5000 {
+		lb_policy       random_choose 2
+		health_path     /healthcheck
+		health_interval 10s
+	}
+}
